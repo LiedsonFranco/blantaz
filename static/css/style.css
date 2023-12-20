@@ -44,7 +44,7 @@ header h1{
     font-weight: 700;
 }
 .slideshow{
-    max-width: 1000px;
+    max-width: 1300px;
     position: relative;
     margin: auto;
 }
@@ -74,6 +74,9 @@ header h1{
 .slideshow #play:hover{
     margin: auto;
     color: white;
+}
+.slideshow img{
+    border-radius: 20px;
 }
 #next {
     right: 0;
