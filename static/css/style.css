@@ -1,23 +1,24 @@
-html{
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #000000;
     color: #FFF6E0;
 }
+
 .navbar {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 15%;
-    transition: .3s;
+    width: 10vw;
 }
 
 .navbar ul {
     margin: 0;
-    padding: 0; /* Remova o padding aqui */
+    padding: 0;
     position: fixed;
     list-style: none;
     background-color: #1c1c1c;
@@ -27,28 +28,45 @@ body{
 }
 
 .navbar ul li {
-    padding: 4rem; /* Adicione o padding aos itens <li> */
+    padding: 4rem 2rem;
     text-align: center;
 }
 
-.navbar ul li a {
-    color: white; /* Estilização para os links */
-    text-decoration: none;
-}
-.navbar .active{
+.navbar ul li:hover {
+    transition: 1s;
     background-color: #403d39;
 }
-header h1{
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Eczar', serif;
+    font-size: 1rem;
+}
+.navbar a:hover{
+    transition: .3s;
+    color: rgba(237, 89, 89, 0.904);
+}
+
+.navbar .active {
+    background-color: #403d39;
+}
+
+header h1 {
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
 }
-.slideshow{
+
+.slideshow {
     max-width: 1300px;
     position: relative;
     margin: auto;
 }
-.slideshow #next,#prev{
+
+.slideshow #next,
+#prev {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -64,42 +82,70 @@ header h1{
     font-weight: 400;
     font-size: 3rem;
 }
-.slideshow #play{
+
+.slideshow #play {
     position: absolute;
     left: 50%;
     bottom: 5%;
     font-size: 30px;
     color: rgba(255, 255, 255, 0.431);
 }
-.slideshow #play:hover{
+
+.slideshow #play:hover {
     margin: auto;
     color: white;
 }
-.slideshow img{
+
+.slideshow img {
     border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: min-content;
+    height: 100vh;
 }
+
 #next {
     right: 0;
 
 }
+
 #prev {
     left: 0;
 }
-  
-  #prev:hover, #next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-.content{
-    margin-left: 15%;
-    padding: 15px;
+
+#prev:hover,
+#next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
-.content section{
+
+.content {
+    margin-left: 10vw;
+    padding: 15px
+}
+
+.content section {
     padding: 30px;
     text-align: justify;
     font-weight: bold;
 }
-.content section hr{
-    width: 20%;
+
+.content section hr {
+    width: 30%;
     text-align: left;
     margin: 0;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    text-indent: 2rem;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-indent: 2rem;
+    margin-bottom: 0;
 }
